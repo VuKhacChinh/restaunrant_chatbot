@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TamDao Tourist Area</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = 'stylesheet' type = 'text/css' href = '../static/index.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<div id='main_content'>
+    <button id="trainGeneralModel">Train General Model</button>
+    <button id="trainFoodModel">Train Food Model</button>
+    <div id='conversation'>
+        <div id="main_conv">
+        </div>
+        <div id='input_user'>
+                <input id="textInput" type="text" name="question" placeholder="Nhập tin nhắn">
+            <i class="fa fa-heart" style="color:red; font-size:120%"></i>
+        </div>
+        <script>
+          function getBotResponse() {
+            var rawText = $("#textInput").val();
+            var userHtml = '<div class="user_container"><span class="user_send">' + rawText + "</span></div><br><br>";
+            $("#textInput").val("");
+            $("#main_conv").append(userHtml);
+            document
+              .getElementById("input_user")
+              .scrollIntoView({ block: "start", behavior: "smooth" });
+            $.post("/post", { question: rawText }).done(function(data) {
+              var botHtml = '<div class="bot_container"><span class="bot_rep">' + data + "</span></div><br><br>";
+              $("#main_conv").append(botHtml);
+              document
+                .getElementById("input_user")
+                .scrollIntoView({ block: "start", behavior: "smooth" });
+            });
+          }
+          $("#textInput").keypress(function(e) {
+            if (e.which == 13) {
+              getBotResponse();
+            }
+          });
+
+          $("#trainGeneralModel").click(function(e) {
+            $.get("/general/train").done(function(data) {
+              alert("Finish train general model");
+            });
+          });
+
+           $("#trainFoodModel").click(function(e) {
+            $.get("/food/train").done(function(data) {
+              alert("Finish train food model");
+            });
+          });
+        </script>
+    </div>
+    </div>
+</div>
+</body>
+</html>

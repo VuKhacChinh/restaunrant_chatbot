@@ -1,0 +1,70 @@
+
+.user_container{
+    margin: 10px;
+    postion: absolute;
+    right:0;
+}
+
+.bot_container{
+    margin: 10px;
+}
+
+.user_send{
+    display: block;
+    background-color: blue;
+    border-radius: 20px;
+    padding:10px;
+    max-width:40%;
+    line-height: 20px;
+    text-align:left;
+    float:left;
+}
+.bot_rep{
+    display: block;
+    background-color: red;
+    border-radius: 20px;
+    padding:10px;
+    max-width:40%;
+    line-height: 20px;
+    text-align:left;
+    float:right;
+}
+
+#main_content{
+    margin-top: 60px;
+}
+
+#conversation{
+margin: auto;
+    width: 50%;
+    height: 90vh;
+    float: left;
+    display: inline-block;
+    border-left: 2px solid #BBBBBB;
+    border-right: 2px solid #BBBBBB;
+    overflow-y: scroll;
+    color: white;
+    background-attachment: fixed;
+}
+
+#input_user{
+    position: fixed;
+    bottom: 2px;
+    height: 7vh;
+    width:49.5%;
+    background-color: #fff;
+}
+
+#input_user input{
+    margin: 1vh;
+    width:400px;
+    height: 4vh;
+    border-radius: 20px;
+    border-color: white;
+    background-color: #e6e6e6;
+}
+
+#conversation::-webkit-scrollbar {
+    width: 3px;
+    background-color: #AAAAAA;
+}

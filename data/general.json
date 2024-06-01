@@ -1,0 +1,88 @@
+{
+  "intents": [
+    {
+      "questionList": [
+        "có món gì ngon",
+        "không biết ăn gì",
+        "Có món gì ngon không",
+        "có những món nào",
+        "Nhà hàng có những món ăn nào",
+        "Nhà hàng có những gì",
+        "Nhà hàng có những món gì",
+        "Quán có những món ăn nào",
+        "Quán có những gì",
+        "Quán có những món gì",
+        "Có món gì",
+        "Phục vụ những gì",
+        "xin thực đơn",
+        "Món nào được nhiều người thích",
+        "Món nào đang hot hiện nay",
+        "Món ngon nhất là gì",
+        "xin món ngon nhất"
+      ],
+      "label": "Menu"
+    },
+    {
+      "questionList": [
+        "có món gì ngon không",
+        "muốn ăn món",
+        "muốn ăn",
+        "thèm ăn",
+        "thèm món",
+        "đang cần ăn",
+        "đang cần món",
+        "đang cần ăn món",
+        "thích ăn",
+        "thích món",
+        "rất thích ăn",
+        "thích nhất món",
+        "cần tìm món",
+        "cần ăn món"
+      ],
+      "label": "Hobby"
+    },
+    {
+      "questionList": [
+        "địa chỉ ở đâu",
+        "Ở đâu",
+        "địa chỉ",
+        "ở chỗ",
+        "ở khu vực",
+        "xin địa chỉ",
+        "nhà hàng ở đâu",
+        "địa chỉ của quán",
+        "quán ở đâu",
+        "quán ở chỗ nào"
+      ],
+      "label": "ResAddress"
+    },
+    {
+      "questionList": [
+        "quán ở",
+        "quán ở gần",
+        "quán gần",
+        "quán ở cạnh",
+        "quán xung quanh",
+        "quán ở quanh",
+        "nhà hàng ở",
+        "nhà hàng ở gần",
+        "nhà hàng gần",
+        "nhà hàng ở cạnh",
+        "nhà hàng xung quanh",
+        "nhà hàng ở quanh",
+        "có quán nào ở xung quanh",
+        "có quán nào ở cạnh"
+      ],
+      "label": "Address"
+    },
+    {
+      "questionList": [
+        "có món này không",
+        "có món không",
+        "có phục vụ món này không",
+        "có bán món này không"
+      ],
+      "label": "FoodYN"
+    }
+  ]
+}
